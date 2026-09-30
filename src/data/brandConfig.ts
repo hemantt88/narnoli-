@@ -1,11 +1,17 @@
 import { BrandConfig, Category, Collection, NavigationItem, Product } from '../types';
 
-// Asset paths from high-fidelity generated images
+// Proper Vite static asset imports for production bundling & Netlify deployment
+import heroImage from '../assets/images/hero_jewellery_heritage_1790745800929.jpg';
+import rajputiAadImage from '../assets/images/rajputi_aad_necklace_1790745817696.jpg';
+import kundanChokerImage from '../assets/images/kundan_polki_choker_1790745830113.jpg';
+import diamondRingImage from '../assets/images/diamond_solitaire_ring_1790745841321.jpg';
+
+// Authoritative image URLs resolved by Vite during build
 export const IMAGES = {
-  hero: '/src/assets/images/hero_jewellery_heritage_1790745800929.jpg',
-  rajputiAad: '/src/assets/images/rajputi_aad_necklace_1790745817696.jpg',
-  kundanChoker: '/src/assets/images/kundan_polki_choker_1790745830113.jpg',
-  diamondRing: '/src/assets/images/diamond_solitaire_ring_1790745841321.jpg',
+  hero: heroImage,
+  rajputiAad: rajputiAadImage,
+  kundanChoker: kundanChokerImage,
+  diamondRing: diamondRingImage,
 };
 
 export const BRAND_CONFIG: BrandConfig = {
